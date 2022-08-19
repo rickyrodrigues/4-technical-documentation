@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+ <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+
+  <div class="flex-container">
+    <div class="flex-item">
+        <nav id="navbar" class="sidebar">
+         
+          <header>JavaScript Documentation</header>
+           <a href="#introduction_to_javascript" class="nav-link">Introduction to javascript</a>
+           <a href="#javascript_fundamentals" class="nav-link">Javascript fundamentals</a>
+           <a href="#introducing_javaScript_objects" class="nav-link">Introducing JavaScript objects</a>
+           <a href="#asynchronous_javaScript" class="nav-link">Asynchronous JavaScript</a>
+           <a href="#client-side_web_apis" class="nav-link">Client-side web APIs</a>
+        
+        </nav> 
+    </div>
+
+
+    <main id="main-doc">
+        
+    <div class="flex-item">
+       <section id="introduction_to_javascript" class="main-section">
+         <header>Introduction to javascript</header>
+         <P>JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles.</P>
+         <P> The standards for JavaScript are the ECMAScript Language Specification (ECMA-262) and the ECMAScript Internationalization API specification (ECMA-402). As soon as one browser implements a feature, we try to document it. This means that cases where some proposals for new ECMAScript features have already been implemented in browsers, documentation and examples in MDN articles may use some of those new features. Most of the time, this happens between the stages 3 and 4, and is usually before the spec is officially published.</P>
+         <P>Structured content makes the reading experience easier and more enjoyable.</P>
+         <div class="box1">
+         <code>
+          <p>< script src="scripts/main.js"></script></p>
+         </code>
+         </div>
+
+            <div>
+            <h1>A Hello world! example</h1>
+            
+           <p>Go to your test site and create a new folder named scripts. Within the scripts folder, create a new text document called main.js, and save it.</p>           
+           <p>In your index.html file, enter this code on a new line, just before the closing </body> tag:</p>
+           <p>This is doing the same job as the <link> element for CSS. It applies the JavaScript to the page, so it can have an effect on the HTML (along with the CSS, and anything else on the page).</p>
+           <P>Add this code to the main.js file:</P>
+           <div class="box1">
+           <code>
+              const myHeading = document.querySelector('h1');
+              myHeading.textContent = 'Hello world!';
+
+            </code>
+          </div>
+           <p>Make sure the HTML and JavaScript files are saved. Then load index.html in your browser. You should see something like this:!</p>
+             <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics/hello-world.png"><code>&lt;Hello-world&gt;</code></a>                   
+          
+
+
+          </section>
+      
+        
+        <section id="javascript_fundamentals" class="main-section">
+          <header>Javascript fundamentals</header>
+             <h1>Language basics crash course</h1>
+           <p>To give you a better understanding of how JavaScript works, let's explain some of the core features of the language. It's worth noting that these features are common to all programming languages. If you master these fundamentals, you have a head start on coding in other languages too!</p>
+          <h2>variables</h2>
+          <p>Variables are containers that store values. You start by declaring a variable with the let keyword, followed by the name you give to the variable:</p>
+           <P>A semicolon at the end of a line indicates where a statement ends. It is only required when you need to separate statements on a single line. However, some people believe it's good practice to have semicolons at the end of each statement. There are other rules for when you should and shouldn't use semicolons.</P>
+          
+           <div class="box1">
+              <code>
+                <p>let myVariable;</p>
+                
+              </code> -->
+              </div>
+           <P>You can name a variable nearly anything, but there are some restrictions.</P>
+           <p>JavaScript is case sensitive. This means myVariable is not the same as myvariable. If you have problems in your code, check the case!</p>
+           <p>After declaring a variable, you can give it a value:</p>
+             <div class="box1">
+              <code>
+                <p>myVariable = 'Bob';</p>
+                
+              </code> -->
+              </div>
+              <p>You retrieve the value by calling the variable name:</p>
+              <div class="box1">
+              <code>
+                <p>myVariable;</p>
+                
+              </code> -->
+              </div>
+            <h2>Comments</h2>
+            <p>Comments are snippets of text that can be added along with code. The browser ignores text marked as comments. You can write comments in JavaScript just as you can in CSS:</p>
+            <div class="box1">
+              <code>
+                <p>// This is a comment</p>
+                
+              </code> -->
+              </div>
+       
+          </section> 
+        
+        <section id="introducing_javaScript_objects" class="main-section">
+          <header>Introducing JavaScript objects</header>
+          
+
+           <p>In JavaScript, most things are objects, from core JavaScript features like arrays to the browser APIs built on top of JavaScript. You can even create your own objects to encapsulate related functions and variables into efficient packages and act as handy data containers. The object-based nature of JavaScript is important to understand if you want to go further with your knowledge of the language, therefore we've provided this module to help you. Here we teach object theory and syntax in detail, then look at how to create your own objects.</p></li>
+          <h1>Prerequisites</h1> 
+           <p>Before starting this module, you should have some familiarity with <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML">HTML</a> and <a href="https://developer.mozilla.org/en-US/docs/Glossary/CSS">CSS</a>. You are advised to work through the Introduction to HTML and Introduction to CSS modules before starting on JavaScript.</p>
+
+            <p>You should also have some familiarity with JavaScript basics before looking at JavaScript objects in detail. Before attempting this module, work through JavaScript first steps and JavaScript building blocks.</p></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics">Object basics</a>
+          <P>In the first article looking at JavaScript objects, we'll look at fundamental JavaScript object syntax, and revisit some JavaScript features we've already looked at earlier on in the course, reiterating the fact that many of the features you've already dealt with are in fact objects.</P></li>
+          
+         <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes">Object prototypes</a>
+          <P>Prototypes are the mechanism by which JavaScript objects inherit features from one another, and they work differently to inheritance mechanisms in classical object-oriented programming languages. In this article, we explore how prototype chains work.</P>
+
+          <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_programming">Object-oriented programming</a>
+          <P>In this article we'll describe some of the basic principles of "classical" object-oriented programming, and look at the ways it is different from the prototype model in JavaScript.</P></li>
+          
+          <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Classes_in_JavaScript">Classes in JavaScript</a>
+          <P>JavaScript provides some features for people wanting to implement "classical" object-oriented programs, and in this article we'll describe these features.</P></li>
+
+          <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON">Working with JSON data</a>
+          <P>JavaScript Object Notation (JSON) is a standard text-based format for representing structured data based on JavaScript object syntax, which is commonly used for representing and transmitting data on web sites (i.e. sending some data from the server to the client, so it can be displayed on a web page). You'll come across it quite often, so in this article, we give you all you need to work with JSON using JavaScript, including parsing the JSON so you can access data items within it and writing your own JSON.</P></li>       
+        
+          </section>
+
+        <section id="asynchronous_javaScript" class="main-section">
+          <header>Asynchronous JavaScript</header>
+            <h1>Guides</h1>
+       
+             <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing">Introducing asynchronous JavaScript</a> 
+              <p>In this article, we'll learn about synchronous and asynchronous programming, why we often need to use asynchronous techniques, and the problems related to the way asynchronous functions have historically been implemented in JavaScript.</p></li> 
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises">How to use promises</a> 
+              <p>Here we'll introduce promises and show how to use promise-based APIs. We'll also introduce the async and await keywords.</p></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Implementing_a_promise-based_API">Implementing a promise-based API</a> 
+              <p>This article will outline how to implement your own promise-based API.</p></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing_workers">Introducing workers</a> 
+              <p>Workers enable you to run certain tasks in a separate thread to keep your main code responsive. In this article, we'll rewrite a long-running synchronous function to use a worker.</p></li>
+         
+              </section> 
+
+        <section id="client-side_web_apis" class="main-section">
+          <header>Client-side web APIs</header>
+          <p>When writing client-side JavaScript for web sites or applications, you will quickly encounter Application Programming Interfaces (APIs). APIs are programming features for manipulating different aspects of the browser and operating system the site is running on, or manipulating data from other web sites or services. In this module, we will explore what APIs are, and how to use some of the most common APIs you'll come across often in your development work.</p>
+          <h1>Guides</h1>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/client_side_web_docs/Introduction">Introduction to web APIs</a>
+          <p>First up, we'll start by looking at APIs from a high level — what are they, how do they work, how do you use them in your code, and how are they structured? We'll also take a look at what the different main classes of APIs are, and what kind of uses they have.</p></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents">Manipulating documents</a>
+          <p>When writing web pages and apps, one of the most common things you'll want to do is manipulate web documents in some way. This is usually done by using the Document Object Model (DOM), a set of APIs for controlling HTML and styling information that makes heavy use of the Document object. In this article, we'll look at how to use the DOM in detail, along with some other interesting APIs that can alter your environment in interesting ways.</p></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data">Fetching data from the server</a>
+          <p>Another very common task in modern websites and applications is retrieving individual data items from the server to update sections of a webpage without having to load an entirely new page. This seemingly small detail has had a huge impact on the performance and behavior of sites. In this article, we'll explain the concept, and look at technologies that make it possible, such as XMLHttpRequest and the Fetch API.</p></li>
+           <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Third_party_APIs">Third party APIs</a>
+          <p>The APIs we've covered so far are built into the browser, but not all APIs are. Many large websites and services such as Google Maps, Twitter, Facebook, PayPal, etc. provide APIs allowing developers to make use of their data (e.g. displaying your twitter stream on your blog) or services (e.g. displaying custom Google Maps on your site, or using Facebook login to log in your users). This article looks at the difference between browser APIs and 3rd party APIs and shows some typical uses of the latter.</p></li>
+           <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Drawing_graphics">Drawing graphics</a>
+          <p>The browser contains some very powerful graphics programming tools, from the Scalable Vector Graphics (SVG) language, to APIs for drawing on HTML < canvas > elements, (see The Canvas API and WebGL). This article provides an introduction to the Canvas API, and further resources to allow you to learn more.</p></li>
+           <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Video_and_audio_APIs">Video and audio APIs</a>
+          <p>HTML comes with elements for embedding rich media in documents — < video > and < audio> — which in turn come with their own APIs for controlling playback, seeking, etc. This article shows you how to do common tasks such as creating custom playback controls.</p></li>
+           <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Client-side_storage">Client-side storage</a>
+          <p>Modern web browsers feature a number of different technologies that allow you to store data related to web sites and retrieve it when necessary allowing you to persist data long term, save sites offline, and more. This article explains the very basics of how these work.</p></li>
+        
+        </section>
+<section id="foot">
+       <p>All the referances have been taken from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">MDN Web Docs</a> </p>
+      </section>
+      </main>
+       <script src="https:/cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"> </script>
+  </body>
