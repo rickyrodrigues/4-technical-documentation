@@ -87,7 +87,9 @@ code{
      /* padding: 25px; */
      justify-content: space-between;
 }
-
+a {
+    color:rgbrgb(241, 243, 244);
+}
 /* ...........................media screen................................ */
 @media screen and (max-width: 769px)
  {
